@@ -1,12 +1,22 @@
 <p>
   hello works! ㄹㅇ
+</p>
 
   <br/>
   {{name}}
 
   <br/>
 
-  <input type="text" placeholder="입력해라" #inputYourname value="ㄱ">
-  <button (click)="setName(inputYourname.value)">등록</button> 
+  <!-- <input type="text" placeholder="입력해라" #inputYourname value="ㄱ">
+  <button (click)="setName(inputYourname.value)">등록</button>  -->
 
-</p>
+  <!-- <input type="text"  (input)="setName($event)"> -->
+  <input type="text" [(ngModel)]="name">
+
+  <button (click)="clearName()">clear</button>
+  <p ngel> name: {{ name }} </p>
+
+  <li *ngFor="let user of users; let i = index">
+    {{ i }} : {{user.name}}`
+  </li>
+

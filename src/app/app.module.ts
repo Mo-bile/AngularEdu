@@ -22,7 +22,7 @@ import { HelloComponent } from './hello/hello.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    TodosModule
+    TodosModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
